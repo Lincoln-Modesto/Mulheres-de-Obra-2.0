@@ -1,0 +1,72 @@
+.item-link{
+  font-size: 18px;
+  color: $gray-1;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.5s ease-in;
+  padding: 15px;
+
+  &:hover{
+    color: $primary-dark;
+  }
+}
+
+.link-button{
+  display: inline-block;
+  color: $primary-dark;
+  background-image: url('../../assets/svg/arrow.svg');
+  background-repeat: no-repeat;
+  background-position: 10% 50%;
+  font-size: 18px;
+  padding: 16px 16px 16px 40px;
+  position: relative;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  transition: 0.3s ease;
+
+  &:hover{
+    opacity: 0.9;
+    transform: scale(1.03);
+  }
+}
+
+button{
+  background: linear-gradient(220.94deg, $green-normal 14.43%, $green-dark 85.28%);
+  border-radius: 14px;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+  border: none;
+  text-decoration: none;
+  @include typeface-2(p3, desktop);
+  color: $white-light;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  padding: 12px 36px;
+
+  transition: 0.3s ease;
+
+  box-shadow: 0px 17px 17px rgba(80, 196, 80, 0.13),
+  0px 5.125px 5.125px rgba(80, 196, 80, 0.085),
+  0px 2.12866px 2.12866px rgba(103, 196, 80, 0.065),
+  0px 0.769896px 0.769896px rgba(80, 196, 138, 0.045);
+
+  &:hover {
+    box-shadow: 0px 17px 17px rgba(80, 196, 80, 0.13),
+      0px 5.125px 5.125px rgba(80, 196, 80, 0.085),
+      0px 2.12866px 2.12866px rgba(103, 196, 80, 0.065),
+      0px 0.769896px 0.769896px rgba(80, 196, 138, 0.045);
+    transform: scale(1.03);
+    opacity: 0.9;
+  }
+
+  img{
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+  }
+}

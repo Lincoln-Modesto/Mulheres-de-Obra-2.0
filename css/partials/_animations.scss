@@ -1,0 +1,41 @@
+.logo-mdo{
+  animation: logo 4s ease infinite alternate;
+}
+
+@keyframes logo {
+  0%{
+    stroke-width: 0;
+    stroke-dasharray: 0 400;
+    stroke-opacity: 1;
+  }
+  50%{
+    stroke-width: 2;
+    stroke-dasharray: 200 200;
+    stroke-opacity: 1;
+  }
+  100%{
+    stroke-width: 3;
+    stroke-dasharray: 400 0;
+    stroke-opacity: 1;
+    stroke: #EF4358;
+  }
+}
+
+.symbol-move-small{
+  animation: symbol-move 3s ease 1s infinite alternate
+}
+.symbol-move-normal{
+  animation: symbol-move 3s ease 4s infinite alternate
+}
+.symbol-move-biggest{
+  animation: symbol-move 3s ease 2s infinite alternate
+}
+
+// @keyframes symbol-move {
+//   0%{
+//     transform: translate(0, 0, 0);
+//   }
+//   100%{
+//     transform: translate(10px, -40px, 0);
+//   }
+// }
