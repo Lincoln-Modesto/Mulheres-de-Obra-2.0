@@ -22,20 +22,33 @@
 }
 
 .symbol-move-small{
-  animation: symbol-move 3s ease 1s infinite alternate
+  animation: symbol-move 4s ease 4s infinite alternate-reverse
 }
 .symbol-move-normal{
-  animation: symbol-move 3s ease 4s infinite alternate
+  animation: symbol-move-2 4s ease 2s infinite alternate-reverse
 }
 .symbol-move-biggest{
-  animation: symbol-move 3s ease 2s infinite alternate
+  animation: symbol-move 4s ease 0s infinite alternate-reverse
 }
 
-// @keyframes symbol-move {
-//   0%{
-//     transform: translate(0, 0, 0);
-//   }
-//   100%{
-//     transform: translate(10px, -40px, 0);
-//   }
-// }
+@keyframes symbol-move {
+  0%{
+    transform: translate3d(0, 0, 0);
+    transform: rotate(0);
+  }
+  100%{
+    transform: translate3d(12px, 5px, 0);
+    transform: rotate(30deg);
+  }
+}
+
+@keyframes symbol-move-2 {
+  0%{
+    transform: translate3d(0, 0, 0);
+    transform: rotate(0);
+  }
+  100%{
+    transform: translate3d(12px, 5px, 0);
+    transform: rotate(10deg);
+  }
+}

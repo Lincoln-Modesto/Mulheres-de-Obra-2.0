@@ -1,0 +1,35 @@
+.swiper{
+  width: 650px;
+  height: 420px;
+  position: relative;
+}
+
+.button-next{
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  background-image: url('../../assets/svg/arrow.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.button-prev{
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  background-image: url('../../assets/svg/arrow.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  transform: rotate(180deg);
+}
+
+.swiper-slide{
+  max-width: 650px;
+  padding: 24px 36px;
+  margin: 0px 16px;
+
+  img{
+    max-width: 550px;
+    max-height: 420px;
+  }
+}

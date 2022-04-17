@@ -77,7 +77,7 @@ h2 {
 }
 
 h3 {
-  color: $black-normal;
+  color: $gray-1;
   @include typeface-1(h3, desktop);
   @include responsive(s) {
     @include typeface-1(h3, mobile);

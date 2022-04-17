@@ -15,33 +15,36 @@
   <link rel="stylesheet" href="css/aos.css" />
   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
   <script src="./js/svg-inject.min.js"></script>
+  
 </head>
 
 <body>
   <header id="header">
     <nav class="navbar-desktop">
-      <div class="logo"><img src="./assets/svg/logo.svg" alt="Mulheres de obra" onload="SVGInject(this)"></div>
+      <div class="logo">
+        <a href="#home"><img src="./assets/svg/logo.svg" alt="Mulheres de obra" onload="SVGInject(this)"></a>
+      </div>
       <ul class="menu-desktop">
         <li class="menu-item">
-          <a class="item-link"> Sobre nós</a>
+          <a class="item-link" href="#sobre"> Sobre nós</a>
         </li>
         <li class="menu-item">
-          <a class="item-link">Serviços</a>
+          <a class="item-link" href="#servicos">Serviços</a>
         </li>
         <li class="menu-item">
-          <a class="item-link">Clientes</a>
+          <a class="item-link" href="#clientes">Clientes</a>
         </li>
         <li class="menu-item">
-          <a class="item-link">Reconhecimento</a>
+          <a class="item-link" href="#reconhecimento">Reconhecimento</a>
         </li>
         <li class="menu-item">
-          <a class="item-link">Contato</a>
+          <a class="item-link" href="#contato">Contato</a>
         </li>
       </ul>
     </nav>
   </header>
 
-  <main class="hero py-5 w-100">
+  <main class="hero py-5 w-100" id="home">
     <section class="container d-flex flex-between">
       <div class="flex-item-1 p-2 ">
         <h1 class="title mb-3">Mulheres de obra</h1>
@@ -66,7 +69,7 @@
     </section>
   </main>
 
-  <section class="container">
+  <section class="container py-5" id="sobre">
     <div class="flex-item-4 flex-column mx-2" style="min-width: 220px;">
       <h2 class="title-section mb-3">Sobre nós</h2>
       <p class="mb-2">
@@ -90,7 +93,7 @@
     </div>
   </section>
 
-  <section class="container py-3">
+  <section class="container py-5" id="servicos">
     <div>
       <div>
         <h2 class="title-section mb-3">Nossos Serviços</h2>
@@ -101,8 +104,8 @@
           Quis pellentesque vulputate at mattis nibh nulla est. Pharetra, eget purus tortor nibh porta ipsum enim urna
           viverra.</p>
       </div>
-      <div>
-        <ul class="mt-3">
+      <div class="d-flex flex-between">
+        <ul class="mt-3 mr-3">
           <li class="d-flex flex-start">
             <div class="check mr-2">
               <img src="./assets/svg/check.svg" alt="">
@@ -139,15 +142,143 @@
           </li>
           <span class="link-button mt-3">Saiba Mais</span>
         </ul>
+        <div>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./assets/img/section3-1.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/img/section3-2.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/img/section3-3.jpg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="d-flex flex-center w-100 mt-2">
+            <div class="button-prev mr-2"></div>
+            <div class="button-next"></div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
+  <section class="container py-5" id="clientes">
+    <div class="w-100">
+      <h2 class="title-section mb-4">Nossos Clientes</h2>
+      <div class="d-flex flex-between">
+        <div class="card mr-3">
+          <img src="./assets/img/client.png" alt="client" class="my-2">
+          <h4 class="mt-2">Amanda Silva</h4>
+          <p class="mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Quis pellentesque vulputate at mattis nibh nulla est.
+            Pharetra, eget purus tortor nibh porta ipsum enim urna viverra.</p>
+        </div>
+        <div class="card mr-3">
+          <img src="./assets/img/client.png" alt="client" class="my-2">
+          <h4 class="mt-2">Amanda Silva</h4>
+          <p class="mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Quis pellentesque vulputate at mattis nibh nulla est.
+            Pharetra, eget purus tortor nibh porta ipsum enim urna viverra.</p>
+        </div>
+        <div class="card mr-3">
+          <img src="./assets/img/client.png" alt="client" class="my-2">
+          <h4 class="mt-2">Amanda Silva</h4>
+          <p class="mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Quis pellentesque vulputate at mattis nibh nulla est.
+            Pharetra, eget purus tortor nibh porta ipsum enim urna viverra.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container py-5" id="reconhecimento">
+    <div class="w-100">
+      <h2 class="title-section mb-3">Reconhecimento</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis pellentesque vulputate at mattis nibh nulla est.
+        Pharetra, eget purus tortor nibh porta ipsum enim urna viverra Lorem ipsum dolor sit amet, consectetur
+        adipiscing elit.
+        Quis pellentesque vulputate at mattis nibh nulla est.
+        Pharetra, eget purus tortor nibh porta ipsum enim urna viverra.</p>
+      <div class="content-rewards d-flex flex-start mt-3">
+        <div class="small-images flex-item-2">
+          <img src="./assets/img/rewards1.png" alt="Reconhecimento Mulheres de Obra - Sebrae">
+          <img src="./assets/img/mdo4.jpg" alt="Reconhecimento Mulheres de Obra - Sebrae">
+          <img src="./assets/img/mdo2.jpg" alt="Reconhecimento Mulheres de Obra - Sebrae">
+          <img src="./assets/img/rewards2.png" alt="Reconhecimento Mulheres de Obra - Sebrae">
+        </div>
+        <div class="big-image flex-item-1">
+          <img src="./assets/img/mdo3.jpg" alt="Reconhecimento Mulheres de Obra - Sebrae">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5 contact" id="contato">
+    <div class="container">
+      <div class="w-100 d-flex flex-between">
+        <div class="flex-item-1">
+          <h2 class="title-section mb-3">Contato</h2>
+          <h3 class="mb-3">Precisa de um orçamento? Mande-nos uma mensagem!</h3>
+          <p class="mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Quis pellentesque vulputate at mattis nibh nulla est.
+            Pharetra, eget purus tortor nibh porta ipsum enim urna viverra.</p>
+          <div class="d-flex flex-start">
+            <button class="mr-2"><img src="./assets/svg/whatsapp.svg" alt="whatsapp"> Fale Conosco</button>
+            <span class="link-button">Acompanhe</span>
+          </div>
+        </div>
+        <div class="flex-item-1 content-contact-symbols">
+          <img src="./assets/svg/symbol-small.svg" alt="symbol" class="symbol-small symbol-1" onload="SVGInject(this)">
+          <img src="./assets/svg/symbol-normal.svg" alt="symbol" class="symbol-normal symbol-2"
+            onload="SVGInject(this)">
+          <img src="./assets/svg/symbol-small.svg" alt="symbol" class="symbol-small symbol-3" onload="SVGInject(this)">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="w-100">
+    <section class="container w-100 flex-between">
+      <div class="content-footer">
+        <div class="logo-white mb-3">
+          <img src="./assets/svg/logo-white.svg" alt="logo mulheres de obra">
+          <h3>Mulheres de Obra</h3>
+        </div>
+        <div class="mb-2">
+          <strong>Tel.:</strong>
+          <span>79 98865-6284, 79 99678-7339</span>
+        </div>
+        <div class="mb-2">
+          <strong>E-mail:</strong>
+          <span>mulheresdeobra@gmail.com</span>
+        </div>
+        <div class="mb-4">
+          <strong>Endereço:</strong>
+          <span>R. Rosalina, 305 - Farolândia, Aracaju - SE, 49032-150</span>
+        </div>
+        <div class="content-footer-icons">
+          <a href="https://www.instagram.com/mulheresdeobra/" target="_blank "><img src="./assets/svg/instagram.svg"
+              alt="instagram"></a>
+          <img src="./assets/svg/facebook.svg" alt="facebook">
+          <img src="./assets/svg/youtube.svg" alt="youtube">
+        </div>
+      </div>
+      <div>
+        <img src="./assets/svg/loog-big.svg" alt="logo mulheres de obra, tamanho grande">
+      </div>
+    </section>
+  </footer>
+
+  <script src="./js/ancora.js"></script>
   <script src="./js/app.js"></script>
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <script>
-    var swiper = new Swiper('.swiper-container', {
-      slidesPerView: 'auto',
+    var swiper = new Swiper('.swiper', {
+      slidesPerView: '1',
+      loop: true,
       spaceBetween: 40,
       grabCursor: true,
       pagination: {
