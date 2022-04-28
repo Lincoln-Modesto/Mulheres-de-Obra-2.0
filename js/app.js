@@ -10,15 +10,16 @@ function scrollHeader() {
 
 window.addEventListener('scroll', scrollHeader);
 
-const showMenu = (toggleId, navId) => {
-  const toggle = document.getElementById(toggleId);
-  const nav = document.getElementById(navId);
+const burgerMenu = document.getElementById("burger");
+const navbarMenu = document.getElementById("menu");
 
-  if (toggle && nav) {
-    toggle.addEventListener('click', () => {
-      nav.classList.toggle('active-menu-mobile');
-      toggle.classList.toggle('active-bx');
-    })
-  }
-}
-showMenu('bx', 'menu-mobile')
+burgerMenu.addEventListener("click", () => {
+	burgerMenu.classList.toggle("is-active");
+	navbarMenu.classList.toggle("is-active");
+
+	if (navbarMenu.classList.contains("is-active")) {
+		navbarMenu.style.maxHeight = navbarMenu.scrollHeight + "px";
+	} else {
+		navbarMenu.removeAttribute("style");
+	}
+});

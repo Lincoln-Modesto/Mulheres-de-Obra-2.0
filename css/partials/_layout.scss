@@ -148,6 +148,10 @@ $container-s: 540px;
 
 .hero {
   background: linear-gradient(180deg, #f3d7df 0%, rgba(255, 226, 234, 0.5) 83.7%, rgba(229, 239, 255, 0) 100%);
+
+  @include responsive(s) {
+    padding-bottom: 0 !important;
+  }
 }
 
 .content-video {
@@ -157,24 +161,40 @@ $container-s: 540px;
     position: absolute;
     z-index: -1;
   }
+
+  @include responsive(s) {
+    padding: 16px 0;
+  }
 }
 
 .symbol-biggest {
   top: -220px;
   left: -70px;
   height: 600px;
+
+  @include responsive(s) {
+    display: none;
+  }
 }
 
 .symbol-normal {
   top: 400px;
   left: 100px;
   height: 150px;
+
+  @include responsive(s) {
+    display: none;
+  }
 }
 
 .symbol-small {
   top: 280px;
   left: -500px;
   height: 76px;
+
+  @include responsive(s) {
+    display: none;
+  }
 }
 
 .responsive-video {
@@ -182,6 +202,41 @@ $container-s: 540px;
   justify-content: flex-end;
   align-items: center;
   z-index: 9;
+
+  @include responsive(s) {
+    justify-content: center;
+  }
+
+  @media only screen and (max-width: 399px) {
+    display: none;
+  }
+
+  .video {
+    width: 700px;
+    height: 400px;
+
+    @media only screen and (max-width: 1100px) {
+      width: 550px;
+      height: 350px;
+    }
+
+    @include responsive(s) {
+      max-width: 400px;
+      max-height: 250px;
+    }
+  }
+
+  @include responsive(s) {
+    width: 500px;
+    height: 200px;
+  }
+
+}
+
+#sobre>div {
+  @include responsive(s) {
+    margin: 0;
+  }
 }
 
 .content-about {
@@ -199,12 +254,39 @@ $container-s: 540px;
     width: 325px;
     height: 325px;
   }
+
+  @include responsive(s) {
+    display: none;
+  }
+}
+
+#sobre {
+  @include responsive(s) {
+    padding-bottom: 0px;
+    padding-top: 0;
+  }
+}
+
+.content-services {
+  @include responsive(s) {
+    flex-direction: column-reverse;
+  }
+}
+
+#servicos {
+  @include responsive(s) {
+    padding-top: 0px;
+  }
 }
 
 .content-about-2 {
   img {
     height: 500px;
     border-radius: 45px;
+  }
+
+  @include responsive(s) {
+    display: none;
   }
 }
 
@@ -220,33 +302,93 @@ li {
   border-radius: 30px;
   display: flex;
   justify-content: center;
+  padding: 10px;
   align-items: center;
 
   box-shadow: 0px 3.204559087753296px 5.026759624481201px 0px #EF435807;
-
   box-shadow: 0px 8.860197067260742px 13.898346900939941px 0px #EF43580A;
-
   box-shadow: 0px 21.331939697265625px 33.46186447143555px 0px #EF43580D;
-
   box-shadow: 0px 70.75956726074219px 110.99540710449219px 0px #EF435814;
 
   img {
     width: 30px;
   }
+
+  @media screen and (max-width: 1399px) {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+
+    img {
+      width: 24px;
+    }
+  }
+
+  @include responsive(s) {
+    width: 40px;
+    height: 40px;
+
+    img {
+      width: 18px;
+    }
+  }
 }
 
 .card {
-  width: 425px;
+  width: 400px;
   height: 330px;
   border-radius: 50px;
   background-color: $primary-extra-light;
   box-shadow: 0px 4px 4px 0px #00000040;
   padding: 30px;
+  margin: 20px;
 
   img {
     height: 56px;
     width: 56px;
     border-radius: 28px;
+  }
+}
+
+.clients {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#clientes {
+  @include responsive(s) {
+    padding-top: 0;
+  }
+}
+
+#reconhecimento {
+  @include responsive(s) {
+    padding-top: 0;
+  }
+}
+
+
+
+.hero-section {
+  @include responsive(s) {
+    flex-direction: column-reverse !important;
+
+    .content-video {
+      margin-bottom: 100px;
+
+      @media only screen and (max-width: 399px) {
+        display: none;
+      }
+
+    }
+  }
+}
+
+.container-swiper {
+  @include responsive(s) {
+    display: none;
   }
 }
 
@@ -262,15 +404,48 @@ li {
     margin-top: 25px;
     margin-right: 25px;
   }
+
+  @media screen and (max-width: 1250px) {
+    width: 100%;
+  }
+
+  @include responsive(s) {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.big-image {
+  img {
+    border-radius: 20px;
+  }
+
+  @media screen and (max-width: 1250px) {
+    display: none;
+  }
 }
 
 .contact {
   background: linear-gradient(180deg, rgba(250, 226, 233, 0) 0%, #FEE3EA 100%);
+
+  @include responsive(s) {
+    padding-top: 0 !important;
+  }
+}
+
+.logo-footer {
+  @include responsive(s) {
+    display: none;
+  }
 }
 
 .content-contact-symbols {
   display: flex;
   position: relative;
+
+  @include responsive(s) {
+    display: none;
+  }
 }
 
 .symbol-1 {
@@ -278,44 +453,44 @@ li {
   top: -150px;
   left: -200px;
   transform: rotate(180deg);
-  
+
 }
 
 .symbol-2 {
   position: absolute;
   top: 50px;
   left: 240px;
- 
+
 }
 
 .symbol-3 {
   position: absolute;
   top: 150px;
   left: -60px;
- 
+
 }
 
 footer {
   background: linear-gradient(220.94deg, #FF81AE 14.43%, #EF4358 85.28%);
 }
 
-.content-footer{
+.content-footer {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
 
-  div{
+  div {
 
-    strong{
+    strong {
       font-weight: 700;
       font-family: 'Inter', sans-serif;
       color: #fff;
       font-size: 18px;
     }
 
-    span{
+    span {
       color: #fff;
       font-family: 'Inter', sans-serif;
       font-size: 16px;
@@ -340,14 +515,22 @@ footer {
   }
 }
 
-.content-footer-icons{
+.content-footer-icons {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 
-  img{
+  img {
     width: 32px;
     height: 32px;
     margin-right: 15px;
+  }
+}
+
+footer {
+  section {
+    @include responsive(s) {
+      flex-direction: row !important;
+    }
   }
 }

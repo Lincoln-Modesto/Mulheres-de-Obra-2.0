@@ -1,4 +1,4 @@
-header{
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -11,6 +11,10 @@ header{
 
   z-index: 800;
   position: fixed;
+
+  @include responsive(s){
+    display: none;
+  }
 }
 
 .active-header {
@@ -43,11 +47,21 @@ header{
   align-items: center;
   justify-content: flex-start;
 
-  @include responsive(s) {
-    display: none;
-  }
-
   li {
     margin-left: 25px;
+  }
+}
+
+.navbar-mobile {
+  max-width: $container-xl;
+  margin: 0 auto;
+  padding: 10px 24px;
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  @include responsive(s) {
+    display: flex;
   }
 }
