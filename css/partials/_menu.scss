@@ -11,8 +11,8 @@ header {
 
   z-index: 800;
   position: fixed;
-
-  @include responsive(s){
+  
+  @media only screen and (max-width: 550px) {
     display: none;
   }
 }
@@ -34,7 +34,15 @@ header {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+}
 
+.sobre {
+  @include responsive(s) {
+    display: none;
+  }
+}
+
+.reconhecimento {
   @include responsive(s) {
     display: none;
   }
@@ -49,6 +57,10 @@ header {
 
   li {
     margin-left: 25px;
+  }
+  
+  @media only screen and (max-width: 550px) {
+    display: none;
   }
 }
 

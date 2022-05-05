@@ -205,9 +205,17 @@ $container-s: 540px;
 
   @include responsive(s) {
     justify-content: center;
+    width: max-content;
+    height: 400px;
   }
 
-  @media only screen and (max-width: 399px) {
+  @media only screen and (max-width: 770px) {
+    margin-top: 50px;
+    width: 500px;
+    height: 230px;
+  }
+
+  @media only screen and (max-width: 550px) {
     display: none;
   }
 
@@ -221,16 +229,18 @@ $container-s: 540px;
     }
 
     @include responsive(s) {
-      max-width: 400px;
-      max-height: 250px;
+      width: 750px;
+      height: 400px;
     }
   }
 
-  @include responsive(s) {
-    width: 500px;
-    height: 200px;
-  }
+}
 
+#home {
+
+  @media only screen and (max-width: 550px) {
+    padding-top: 0;
+  }
 }
 
 #sobre>div {
@@ -378,11 +388,15 @@ li {
     .content-video {
       margin-bottom: 100px;
 
-      @media only screen and (max-width: 399px) {
+      @media only screen and (max-width: 550px) {
         display: none;
       }
-
     }
+  }
+
+  
+  @media only screen and (max-width: 550px) {
+    padding-top: 80px;
   }
 }
 

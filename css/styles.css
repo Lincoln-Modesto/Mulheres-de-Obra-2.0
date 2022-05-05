@@ -230,10 +230,22 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    height: 400px;
   }
 }
 
-@media only screen and (max-width: 399px) {
+@media only screen and (max-width: 770px) {
+  .responsive-video {
+    margin-top: 50px;
+    width: 500px;
+    height: 230px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
   .responsive-video {
     display: none;
   }
@@ -253,15 +265,14 @@
 
 @media screen and (max-width: 960px) {
   .responsive-video .video {
-    max-width: 400px;
-    max-height: 250px;
+    width: 750px;
+    height: 400px;
   }
 }
 
-@media screen and (max-width: 960px) {
-  .responsive-video {
-    width: 500px;
-    height: 200px;
+@media only screen and (max-width: 550px) {
+  #home {
+    padding-top: 0;
   }
 }
 
@@ -434,9 +445,15 @@ li {
   }
 }
 
-@media only screen and (max-width: 960px) and (max-width: 399px) {
+@media only screen and (max-width: 960px) and (max-width: 550px) {
   .hero-section .content-video {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .hero-section {
+    padding-top: 80px;
   }
 }
 
@@ -1145,7 +1162,6 @@ strong {
 
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 body {
@@ -1184,7 +1200,7 @@ header {
   position: fixed;
 }
 
-@media screen and (max-width: 960px) {
+@media only screen and (max-width: 550px) {
   header {
     display: none;
   }
@@ -1213,7 +1229,13 @@ header {
 }
 
 @media screen and (max-width: 960px) {
-  .navbar-desktop {
+  .sobre {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .reconhecimento {
     display: none;
   }
 }
@@ -1233,6 +1255,12 @@ header {
 
 .menu-desktop li {
   margin-left: 25px;
+}
+
+@media only screen and (max-width: 550px) {
+  .menu-desktop {
+    display: none;
+  }
 }
 
 .navbar-mobile {
