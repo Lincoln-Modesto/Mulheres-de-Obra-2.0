@@ -29,6 +29,10 @@ svg, img{
   width: 100%;
 }
 
+a{
+  text-decoration: none
+}
+
 @import "partials/menu";
 @import "partials/swiper";
 @import "partials/animations";

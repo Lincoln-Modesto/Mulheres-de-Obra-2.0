@@ -369,6 +369,18 @@ li {
 
 #clientes {
   @include responsive(s) {
+    display: none;
+  }
+}
+
+#depoimentos{
+  @include responsive(s) {
+    padding-top: 0;
+  }
+}
+
+#curso{
+  @include responsive(s) {
     padding-top: 0;
   }
 }
@@ -378,8 +390,6 @@ li {
     padding-top: 0;
   }
 }
-
-
 
 .hero-section {
   @include responsive(s) {
@@ -393,7 +403,6 @@ li {
       }
     }
   }
-
   
   @media only screen and (max-width: 550px) {
     padding-top: 80px;
@@ -543,8 +552,51 @@ footer {
 
 footer {
   section {
+    padding-bottom: 50px !important;
+
     @include responsive(s) {
       flex-direction: row !important;
     }
+  }
+}
+
+.curso{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  max-width: 800px;
+}
+
+.lm{
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: white;
+  position: relative;
+  margin-top: 100px;
+
+  a{
+    transition: 0.5s ease;
+    cursor: pointer;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}
+
+.content-clients{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  img{
+    height: 92px;
+    width: 200px;
   }
 }

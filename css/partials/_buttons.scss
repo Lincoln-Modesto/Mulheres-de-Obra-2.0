@@ -25,6 +25,7 @@
   cursor: pointer;
   font-family: 'Inter', sans-serif;
   transition: 0.3s ease;
+  text-decoration: none;
 
   &:hover{
     opacity: 0.9;
@@ -69,5 +70,39 @@
     width: 24px;
     height: 24px;
     margin-right: 10px;
+  }
+}
+
+.button-form{
+  background: linear-gradient(220.94deg, #EF4358 14.43%, #F9688B 85.28%);
+  border-radius: 14px;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+  border: none;
+  text-decoration: none;
+  @include typeface-2(p3, desktop);
+  color: $white-light;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  padding: 12px 36px;
+
+  transition: 0.3s ease;
+
+  box-shadow: 0px 17px 17px rgba(196, 80, 177, 0.13),
+  0px 5.125px 5.125px rgba(196, 80, 177, 0.085),
+  0px 2.12866px 2.12866px rgba(196, 80, 177, 0.065),
+  0px 0.769896px 0.769896px rgba(196, 80, 177, 0.045);
+
+  &:hover {
+    box-shadow: 0px 17px 17px rgba(196, 80, 177, 0.13),
+      0px 5.125px 5.125px rgba(196, 80, 177, 0.085),
+      0px 2.12866px 2.12866px rgba(196, 80, 177, 0.065),
+      0px 0.769896px 0.769896px rgba(196, 80, 177, 0.045);
+    transform: scale(1.03);
+    opacity: 0.9;
   }
 }
