@@ -1433,8 +1433,8 @@ header {
 }
 
 .swiper-slide img {
-  max-width: 550px;
-  max-height: 420px;
+  width: 550px;
+  height: 420px;
 }
 
 .logo-mdo {
